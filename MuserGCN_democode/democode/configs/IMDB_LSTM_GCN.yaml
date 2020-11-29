@@ -1,0 +1,25 @@
+
+
+gpu:
+  device: 0
+training:
+  batch_size: 128
+  eval_batch_size: 100
+  optimizer: adam
+  lr: 0.0005
+  weight_decay: 0.0005
+  epoch: 400
+data:
+  vocab_size: 30001
+  nclass: 2
+  train_num_node: 148
+  test_num_node: 105
+  dim_wordE: 400
+  Total_num_sentence: 333543
+model:
+  SentenceEmbed: BiLSTM
+  nhid: 64
+  dropout: 0.3
+  im_LSTMh: 256
+  PGBN_h1: 200
+  PGBN_numTopic1: 128
